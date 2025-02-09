@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #taskList {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        #currentTime {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📝 Focus App</h1>
+
+    <h2>Add Task</h2>
+    <input type="text" id="taskTitle" placeholder="Task Title">
+    <input type="text" id="taskCategory" placeholder="Category">
+    <input type="datetime-local" id="taskTime">
+    <input type="url" id="taskURL" placeholder="Enter URL">
+    <button id="saveTask">Save Task</button>
+
+    <h2>View Tasks</h2>
+    <button id="getTasks">Load Tasks</button>
+    <ul id="taskList"></ul>
+
+    <h2>Delete Task</h2>
+    <input type="text" id="taskId" placeholder="Paste Task ID">
+    <button id="deleteTask">Delete Task</button>
+
+    <h2>Current Time</h2>
+    <p id="currentTime"></p>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
