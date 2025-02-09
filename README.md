@@ -1,3 +1,5 @@
+## Nudgy
+
 **Nudgy**
 
 A focus-driven productivity app that nudges you with the task at hand.
